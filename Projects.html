@@ -3,8 +3,118 @@
   <head>
 <link rel="icon" href="img/logo.png">
 
-<style>
+<script>
+        function changesnake() {
+            var image = document.getElementById('snakegame');
+                image.src = "img/SnakeGame.png";
 
+        }
+
+	  function changesnake1(){
+	      var image = document.getElementById('snakegame');
+		image.src="img/SnakeGame1.png"
+}
+
+        function changestock() {
+            var image = document.getElementById('stock');
+                image.src = "img/StockMarket.png";
+
+        }
+
+	  function changestock1(){
+	      var image = document.getElementById('stock');
+		image.src="img/StockMarket1.png"
+}
+
+
+        function changegraph() {
+            var image = document.getElementById('graph');
+                image.src = "img/GraphPlotter.png";
+
+        }
+
+	  function changegraph1(){
+	      var image = document.getElementById('graph');
+		image.src="img/GraphPlotter1.png"
+}
+
+
+
+        function changeemp() {
+            var image = document.getElementById('eis');
+                image.src = "img/EIS.png";
+
+        }
+
+	  function changeemp1(){
+	      var image = document.getElementById('eis');
+		image.src="img/EIS1.png"
+}
+
+
+        function changecalc() {
+            var image = document.getElementById('calc');
+                image.src = "img/Calc.png";
+
+        }
+
+	  function changecalc1(){
+	      var image = document.getElementById('calc');
+		image.src="img/Calc1.png"
+}
+
+
+        function changeaudio() {
+            var image = document.getElementById('aud');
+                image.src = "img/Audiobook.png";
+
+        }
+
+	  function changeaudio1(){
+	      var image = document.getElementById('aud');
+		image.src="img/Audiobook1.png"
+}
+
+
+
+    </script>
+
+
+
+<style>
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
 
 </style>
     <!-- Required meta tags -->
@@ -18,23 +128,23 @@
   </head>
   <body style="background-color:#f0f0f5;">
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3399ff;position: sticky;top: 0;   z-index: 100;">
-  <a class="navbar-brand" href="index.html" >Atharv Patwardhan</a>
+  <a class="navbar-brand" href="MyWebsite.html" >Atharv Patwardhan</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html#about" style="color:white">About Me </a>
+        <a class="nav-link" href="MyWebsite.html#about" style="color:white">About Me </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="index.html#skills" style="color:white">Skills</a>
+        <a class="nav-link" href="MyWebsite.html#skills" style="color:white">Skills</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="Projects.html" style="color:white">Projects</a>
       </li>
 	      <li class="nav-item active">
-        <a class="nav-link" href="index.html#contact" style="color:white">Contact</a>
+        <a class="nav-link" href="MyWebsite.html#contact" style="color:white">Contact</a>
       </li>
     </ul>
 
@@ -42,19 +152,55 @@
 </nav>
     <h1 class="display-3 text-center" style="margin-top:40px;">Here are some of my Projects : </h1>
 <font face="Courier New" size="3" color="white">
-<div style="margin-top:40px;text-align:center;background-color:black">
-<pre>
+<div style="margin-top:40px;text-align:center;background-color:#708090">
 <font size="4">
-<ul>
-<li><a href = "https://github.com/atharvpatwardhan/Employee-Information-System" target="_blank">Employee Information System</a></li>
-<li><a href = "https://github.com/atharvpatwardhan/StockMarketPrediction" target="_blank">Stock Market Predictor</a></li>
-<li><a href = "https://github.com/atharvpatwardhan/ConicSectionPlotter" target="_blank">Conic Section Graph Plotter</a></li>
-<li><a href = "https://github.com/atharvpatwardhan/SnakeGame" target="_blank">Snake Game</a></li>
-<li><a href = "https://github.com/atharvpatwardhan/CalculatorApp/" target="_blank">Calculator<a></li>
-</ul>
+
 
 </font>
-</pre>
+<div>
+
+
+
+.
+</div>
+<div style="margin-top:40px;">
+<a href = "https://github.com/atharvpatwardhan/SnakeGame" target="_blank"><img src="img/SnakeGame1.png" id="snakegame" style="height:350px;width:470px;margin-top:40px " onmouseover="changesnake()" onmouseout="changesnake1()"></a>
+
+</div>
+
+<div style="margin-top:40px;">
+<a href = "https://github.com/atharvpatwardhan/StockMarketPrediction" target="_blank"><img src="img/StockMarket1.png" class="rounded" id="stock" alt="Image" style="height:350px;width:470px;margin-top:40px " onmouseover="changestock()" onmouseout="changestock1()"></a>
+
+</div>
+
+<div style="margin-top:40px;">
+<a href = "https://github.com/atharvpatwardhan/ConicSectionPlotter" target="_blank"><img src="img/GraphPlotter1.png" class="rounded" id="graph" alt="Image" style="height:350px;width:470px;margin-top:40px " onmouseover="changegraph()" onmouseout="changegraph1()"></a>
+
+</div>
+
+
+<div style="margin-top:40px;">
+<a href = "https://github.com/atharvpatwardhan/Employee-Information-System" target="_blank"><img src="img/EIS1.png" class="rounded" id="eis" alt="Image" style="height:350px;width:470px;margin-top:40px " onmouseover="changeemp()" onmouseout="changeemp1()"></a>
+
+</div>
+
+
+<div style="margin-top:40px;">
+<a href = "https://github.com/atharvpatwardhan/CalculatorApp/" target="_blank"><img src="img/Calc1.png" class="rounded" id="calc" alt="Image" style="height:350px;width:470px;margin-top:40px " onmouseover="changecalc()" onmouseout="changecalc1()"></a>
+
+</div>
+
+<div style="margin-top:40px;">
+<a href = "https://github.com/atharvpatwardhan/AudioBookGenerator" target="_blank"><img src="img/Audiobook1.png" class="rounded" id="aud" alt="Image" style="height:350px;width:470px;margin-top:40px " onmouseover="changeaudio()" onmouseout="changeaudio1()"></a>
+
+</div>
+
+
+<div style="margin-top:40px;">
+     
+.
+</div>
+
 </div>
 </font>
 
