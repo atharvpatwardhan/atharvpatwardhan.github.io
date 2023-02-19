@@ -329,30 +329,37 @@ Program</h4></a>
   <div class="row d-flex justify-content-center" style="margin-top:40px;">
     <div class="col-md-6">
       <div class="card">
-        <form action="mailto:atharvjpatwardhan@gmail.com" method="POST" enctype="text/plain" name="EmailForm">
+        <form action="https://getform.io/f/e3b61587-7ed9-4e9f-957d-65b601dd1fa0" method="POST">
           <div class="card-body">
             <div class="row m-0">
               <div class="col-md-8">
 
                 <div class="form-outline mb-4">
-                  <input type="text" id="name" name = "name" class="form-control" />
+                  <input type="text" name = "name" class="form-control" />
                   <label class="form-label" for="name">Name</label>
                 </div>
+
+
+                <div class="form-outline mb-4">
+                  <input type="email" name = "email" class="form-control" />
+                  <label class="form-label" for="email">Email</label>
+                </div>
+
+		<div class="form-outline mb-4">
+              <input class="form-control" name="message" rows="4" ></textarea>
+              <label class="form-label" for="message">Message</label>
+            </div>
+		<input type="hidden" name="_gotcha" style="display:none !important">
+
               </div>
-
             </div>
-
-            <div class="form-outline mb-4">
-              <textarea class="form-control" id="content" name="content" rows="4" ></textarea>
-              <label class="form-label" for="content">Message</label>
-            </div>
-
           </div>
 
           <div class="card-footer border-0 bg-light py-3 text-end text-center">
             <button type="submit" value="Send" class="btn btn-primary btn-rounded">Submit</button>
           </div>
         </form>
+
       </div>
     </div>
   </div>
