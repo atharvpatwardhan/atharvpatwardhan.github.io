@@ -1,0 +1,8 @@
+#projects {
+    background-image: linear-gradient(150deg,#8402b0,#0352e6);
+    height: 100%;
+    border-top: 60;
+    -webkit-clip-path: polygon(0 0,30% 70,70% 100%,0 100%);
+    clip-path: polygon(0 70,30% 70,100% 100%,0 100%);
+
+}
